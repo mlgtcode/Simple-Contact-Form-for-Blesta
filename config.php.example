@@ -9,7 +9,7 @@ $department = 2;
 $priority = "critical";
 
 // New ticket creation e-mail notifications
-$mymail = "mail@gttg.space";
+$mymail = "";
 
 // Secure Key Storage
 // $key = SecKeyStore("blesta", "demouser");
