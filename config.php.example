@@ -1,0 +1,19 @@
+<?php
+// Blesta API
+$user = "";
+$key = "";
+$url = "";
+
+// Department and Priority
+$department = 2;
+$priority = "critical";
+
+// New ticket creation e-mail notifications
+$mymail = "mail@gttg.space";
+
+// Secure Key Storage
+// $key = SecKeyStore("blesta", "demouser");
+
+// Debug mode
+$debug = false;
+?>
