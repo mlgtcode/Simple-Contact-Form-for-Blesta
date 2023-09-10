@@ -143,14 +143,14 @@ SOFTWARE.
                   if ($ticket->response() > 0) {
                       echo "<div style='color:green;'>Thank you! We got your message!<br></div>";
                       mail(
-                          $to,
+                          $mymail,
                           "Blesta Simple Contact Form",
                           "A new ticket has been created."
                       );
                   } else {
                       echo "<div style='color:red;'>Error submitting the form. Please contact us by e-mail!</div>";
                       mail(
-                          $to,
+                          $mymail,
                           "Blesta Simple Contact Form",
                           "Ticket creation has been failed! Please check."
                       );
