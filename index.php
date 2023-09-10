@@ -59,11 +59,11 @@ SOFTWARE.
           }
           if ($_POST["textform"]) {
               $myemail = $mymail;
-              $ticketmsg = htmlspecialchars(substr($_POST["textform"], 0, 500));
+              $ticketmsg = htmlspecialchars(substr(strip_tags($_POST["textform"]), 0, 500));
               $ticketsummary = htmlspecialchars(
-                  substr($_POST["summary1"], 0, 35)
+                  substr(strip_tags($_POST["summary1"]), 0, 35)
               );
-              $clientmail = $_POST["mailaddr"];
+              $clientmail = strip_tags($_POST["mailaddr"]);
 
               $requiredf = ["textform", "summary1", "mailaddr"];
               foreach ($requiredf as $fieldf) {
